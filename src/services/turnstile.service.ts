@@ -1,7 +1,7 @@
 import { HttpService } from "@nestjs/axios";
 import { Inject, Injectable, InternalServerErrorException } from "@nestjs/common";
 import { catchError, firstValueFrom } from 'rxjs'
-import { type TurnstileOptions, TURNSTILE_OPTIONS } from '../interfaces'
+import { type TurnstileOptions, TURNSTILE_OPTIONS_SYMBOL } from '../interfaces'
 import { API_URL } from '../constants/turnstile.constant'
 
 @Injectable()
@@ -10,7 +10,7 @@ export class TurnstileService {
        private readonly apiUrl: string
 
        public constructor(
-              @Inject(TURNSTILE_OPTIONS)
+              @Inject(TURNSTILE_OPTIONS_SYMBOL)
               private readonly options: TurnstileOptions,
               private readonly httpService: HttpService
        ) {

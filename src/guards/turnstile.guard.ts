@@ -1,11 +1,11 @@
 import { TurnstileService } from "../services"
-import { TURNSTILE_OPTIONS, TurnstileOptions } from "../interfaces"
+import { TURNSTILE_OPTIONS_SYMBOL, TurnstileOptions } from "../interfaces"
 import { BadRequestException, CanActivate, ExecutionContext, Inject, Injectable } from "@nestjs/common"
 
 @Injectable()
 export class TurnstileGuard implements CanActivate {
        public constructor(
-              @Inject(TURNSTILE_OPTIONS)
+              @Inject(TURNSTILE_OPTIONS_SYMBOL)
               private readonly turnstileService: TurnstileService,
               private readonly options: TurnstileOptions,
        ) {}
