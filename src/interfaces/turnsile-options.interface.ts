@@ -1,6 +1,6 @@
 import type { FactoryProvider, ModuleMetadata } from "@nestjs/common";
 
-export const TURNSTILE_OPTIONS = Symbol('TURNSTILE_OPTIONS');
+export const TURNSTILE_OPTIONS_SYMBOL = Symbol('TURNSTILE_OPTIONS_SYMBOL');
 
 export type TurnstileOptions<Req = Request | any> = Readonly<{
        secretKey: string
