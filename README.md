@@ -14,9 +14,9 @@ Supports both synchronous and asynchronous module configuration. Includes a Guar
 ## Installation
 
 ```bash
-npm install your-turnstile-nestjs-package --save
+npm install nestjs-cloudflare-turnstile --save
 # or
-yarn add your-turnstile-nestjs-package
+yarn add nestjs-cloudflare-turnstile
 ```
 
 ---
