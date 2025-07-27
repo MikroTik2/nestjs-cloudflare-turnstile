@@ -125,7 +125,7 @@ export class AuthController {
 
 If you have any questions or encounter any issues, please don’t hesitate to contact the author or submit an issue in the repository.
 
-- Author: Artur Docenko [(MikroTik2)](https://docenko.vercep.app)
+- Author: Artur Docenko [(MikroTik2)](https://docenko.vercel.app)
 - Contributors:
   - Artur Docenko
 
