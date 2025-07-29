@@ -6,8 +6,8 @@ import { BadRequestException, CanActivate, ExecutionContext, Inject, Injectable 
 export class TurnstileGuard implements CanActivate {
        public constructor(
               @Inject(TURNSTILE_OPTIONS_SYMBOL)
-              private readonly turnstileService: TurnstileService,
               private readonly options: TurnstileOptions,
+              private readonly turnstileService: TurnstileService,
        ) {}
 
        public async canActivate(context: ExecutionContext): Promise<boolean> {
